@@ -1,6 +1,4 @@
-# Sysctl class to change net.ipv4.ip_forward
-class sysctl { 
-        sysctl { 
-                "net.ipv4.ip_forward": val   => "1"; 
-        } 
-} 
+# Change sysctl.conf paramaters
+class sysctl {
+sysctl { 'net.ipv4.ip_foward': val => 1 }
+}
